@@ -7,7 +7,7 @@ public class SavePagedetails {
     public String savetoDisk(String pageDetail, String diskPath) {
         System.out.println("Saving To Disk");
         try {
-            FileWriter fw=new FileWriter("/tmp/a.txt");
+            FileWriter fw=new FileWriter(diskPath);
             fw.write(pageDetail);
             fw.close();
             return "Success";
