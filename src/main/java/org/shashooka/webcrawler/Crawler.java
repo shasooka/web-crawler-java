@@ -16,7 +16,9 @@ public class Crawler {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         GetPagedetails getPagedetails = new GetPagedetails();
-        System.out.println(getPagedetails.listPage());
+//        System.out.println(getPagedetails.listPage());
+        SavePagedetails savePagedetails = new SavePagedetails();
+        savePagedetails.savetoDisk(getPagedetails.listPage(), "/tmp/abc.txt");
 //        GetTime getTime = new GetTime();
 //        System.out.print(getTime.getTime("Shantanu"));
 //        getTime.banana();
